@@ -60,11 +60,13 @@ Index_of_max=i; };
 }
 cout<<"Максимальный элемент массива = "<<arr[index_of_max]<<" и находится на позиции номер "<< index_of_max;
 
-// Сортировка массива
-for (int i=0; i<n-1; i++) {
-Int indexOfMin=i;
-For (int j=i+1; j<n; j++) {
-If(arr[j]<arr[indexOfMin]) { indexOfMin = j }
-}
-If(indexOfMin != i) {swap(arr[i], arr[indexOfMin]);
-}
+	// Сортировка массива
+	for (int i = 0; i < n - 1; i++) {
+		int indexOfMin = i;
+		for (int j = i + 1; j < n; j++) {
+			if (a[j] < a[indexOfMin]) { indexOfMin = j; }
+		}
+		if (indexOfMin != i) {
+			swap(a[i], a[indexOfMin]);
+		}
+	}
