@@ -79,3 +79,15 @@ for (int i=0; i<n-1; i++){
 		if (arr[j]<arr[i]) swap(arr[i],arr[j]);
 	}
 }						 
+
+	
+//Удаление отрицательных элементов
+for (int i=0; i<n; i++){
+		if (arr[i] < 0) {
+			for (int j=i; j<n-1; j++){
+				arr[j]=arr[j+1];
+			}
+			n--;
+			i--;
+		}
+	}
